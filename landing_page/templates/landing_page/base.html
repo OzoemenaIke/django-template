@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="{% static 'landing_page/css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}">
     <title>django template</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <style>
+        body {
+            background-color: #1f2029;
+        }
+    </style>
 </head>
 <body>
     {% block content %}
